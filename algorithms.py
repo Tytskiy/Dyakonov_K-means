@@ -45,7 +45,7 @@ class Kmeans:
             _iter += 1
         return self.__calc_inertia(X)
 
-    def __selecting(self):
+    def __selecting(self,X):
         if(type(self.n_clusters)!=int):
             self.centers_clusters=np.array(self.n_clusters)
             self.n_clusters=self.centers_clusters.shape[0]
@@ -69,7 +69,7 @@ class Kmeans:
         self.labels = np.zeros(X.shape[0], dtype='int')
         min_inertia = None
         for i in range(self.n_init):
-            self.__selecting()
+            self.__selecting(X)
             tmp_label = self.labels.copy()
             tmp = self.__calc(X)
             if(min_inertia == None or tmp < min_inertia):
