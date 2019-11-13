@@ -4,7 +4,7 @@
 Выполнил **Тыцкий Владислав**, 204 группа  
 ВМК МГУ 2019  
 
-# References
+## References
 https://en.wikipedia.org/wiki/K-means_clustering  
 https://en.wikipedia.org/wiki/K-means%2B%2B  
 https://en.wikipedia.org/wiki/Silhouette_(clustering)  
