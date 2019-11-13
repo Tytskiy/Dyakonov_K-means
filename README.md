@@ -5,6 +5,7 @@
 ВМК МГУ 2019  
 
 ## References
+Джю Вандер Плас **Python для сложных задач**  
 https://en.wikipedia.org/wiki/K-means_clustering  
 https://en.wikipedia.org/wiki/K-means%2B%2B  
 https://en.wikipedia.org/wiki/Silhouette_(clustering)  
