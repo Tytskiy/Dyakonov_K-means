@@ -6,7 +6,8 @@ class Kmeans:
     inertia = 0.0
     labels = None
 
-    def __init__(self, n_clusters, select="k-means++", n_init=10, max_iter=300, random_state=None):
+    def __init__(self, n_clusters, select="k-means++", 
+                 n_init=10, max_iter=300, random_state=None):
         self.n_clusters = n_clusters
         self.select = select
         self.n_init = n_init
@@ -58,7 +59,8 @@ class Kmeans:
             for i in range(1, self.n_clusters):
                 for j in range(X.shape[0]):
                     min_dist[j] = np.linalg.norm((X[j]-self.centers_clusters[0:i, :]), axis=1).min()
-                self.centers_clusters[i] = X[np.random.choice(X.shape[0], 1, p=(min_dist**2)/(min_dist**2).sum())].copy()
+                self.centers_clusters[i] = X[np.random.choice(X.shape[0], 1,
+                                                              p=(min_dist**2)/(min_dist**2).sum())].copy()
         else:
             return None
 
