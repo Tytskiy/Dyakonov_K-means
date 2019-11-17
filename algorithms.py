@@ -106,8 +106,8 @@ def sorted_dist_matrix(X,labels,sorting_labels=False):
 def silhouette(X,labels):
     
     def __calc_ai(X,labels,i):
-        a_i=0
         size=0
+        a_i=0
         for j in range(X.shape[0]):
             if(labels[j]==labels[i]):
                 size+=1
